@@ -7,5 +7,7 @@ void main() {
     int[] b = [ 3, 4, 5 ];
 
     writeln(setDifference(a, b));
+    writeln(setIntersection(a, b));
+    writeln(setUnion(a, b));
 
 }
