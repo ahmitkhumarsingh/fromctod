@@ -13,6 +13,8 @@ void main() {
     // sort in ascending order
     sort!("a < b")(array);
 
-    writeln(array);
+    auto isSorted = isSorted!("a < b")(array);
+
+    writeln(isSorted);
 
 }
