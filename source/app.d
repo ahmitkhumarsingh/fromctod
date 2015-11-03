@@ -3,18 +3,9 @@ import std.algorithm;
 
 void main() {
 
-    int[] array = [ 1, 3, 4, 2 ];
+    int[] a = [ 1, 2, 3 ];
+    int[] b = [ 3, 4, 5 ];
 
-    // sort in descending order
-    sort!("a > b")(array);
-
-    writeln(array);
-
-    // sort in ascending order
-    sort!("a < b")(array);
-
-    auto isSorted = isSorted!("a < b")(array);
-
-    writeln(isSorted);
+    writeln(setDifference(a, b));
 
 }
