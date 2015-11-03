@@ -3,11 +3,12 @@ import std.algorithm;
 
 void main() {
 
-    int[] a = [ 1, 2, 3 ];
-    int[] b = [ 3, 4, 5 ];
+    int[] array = [ 1, 2, 3 ];
 
-    writeln(setDifference(a, b));
-    writeln(setIntersection(a, b));
-    writeln(setUnion(a, b));
+    bool allPositive = all!"a > 0"(array);
+    bool anyZero = any!"a == 0"(array);
+
+    writeln(allPositive);
+    writeln(anyZero);
 
 }
